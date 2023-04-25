@@ -1,9 +1,16 @@
 import React from "react";
 import ReactDOM from 'react-dom/client'
+import { CompEjemplo } from './comp'
 
 const rootElement = document.getElementById('root') //elemento root seleccionado
 const root = ReactDOM.createRoot(rootElement)
 
 
-root.render(<h1>Hola mundo<h1/>)
 
+root.render(
+    <>
+        <CompEjemplo />
+        <CompEjemplo />
+        <CompEjemplo />
+    </>
+)
