@@ -1,4 +1,5 @@
-// Los props (propiedades), son un mecanismo para pasar datos y funcionalidades de un componente padre a un componente hijo.
+// Los props (propiedades), son un mecanismo para pasar datos y funcionalidades de un componente padre a un componente hijo.}
+
 export function CompEjemplo(props) {
   console.log(props);
   return <h2>{props.title}</h2>;
@@ -6,6 +7,7 @@ export function CompEjemplo(props) {
 
 export function ComponenteCard(props) {
   console.log(props);
+
   return (
     <div>
         
@@ -22,3 +24,5 @@ export function ComponenteCard(props) {
     </div>
   );
 }
+
+
