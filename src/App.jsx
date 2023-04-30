@@ -1,7 +1,25 @@
-import './style.css'
+import "./style.css";
 
 export const Square = () => {
-    return(
-        <button className='Square'>X</button>
-    )
-}
+  return (
+    <>
+      <div className="boardRow">
+        <button className="Square">X</button>
+        <button className="Square">X</button>
+        <button className="Square">X</button>
+      </div>
+
+      <div className="boardRow">
+        <button className="Square">X</button>
+        <button className="Square">X</button>
+        <button className="Square">X</button>
+      </div>
+
+      <div className="boardRow">
+        <button className="Square">X</button>
+        <button className="Square">X</button>
+        <button className="Square">X</button>
+      </div>
+    </>
+  );
+};
