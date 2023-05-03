@@ -1,29 +1,42 @@
 import "./style.css";
+import { useState } from "react";
 
-export const BotonRow = ({value}) => {
+export const BotonRow = ({ value }) => {
+  const [valueX, putX] = useState(0);
+
   return (
     <>
-      <button className="Square" >{value + 1}</button>
-      <button className="Square" >{value + 2}</button>
-      <button className="Square" >{value + 3}</button>
+      <button
+        onClick={() => {
+          putX("X");
+        }}
+        className="Square"
+      >
+        {valueX}
+      </button>
     </>
   );
 };
-
 
 export const Square = () => {
   return (
     <>
       <div className="boardRow">
-        <BotonRow value={0} />
+        <BotonRow />
+        <BotonRow />
+        <BotonRow />
       </div>
 
       <div className="boardRow">
-        <BotonRow value={3} />
+        <BotonRow />
+        <BotonRow />
+        <BotonRow />
       </div>
 
       <div className="boardRow">
-        <BotonRow value={6} />
+        <BotonRow />
+        <BotonRow />
+        <BotonRow />
       </div>
     </>
   );
