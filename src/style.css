@@ -1,0 +1,21 @@
+.boardRow {
+  background-color: rgb(105, 0, 0);
+}
+
+.Square {
+  background-color: rgb(87, 187, 201);
+  border: 2px solid rgb(105, 0, 0);
+  font-size: 61px;
+}
+
+.Square:hover {
+  background-color: rgb(31, 67, 121);
+  box-shadow: 0px 0px 16px rgb(79, 176, 255);
+
+  color: rgb(0, 247, 255);
+
+  border: 2px solid rgb(0, 192, 218);
+  font-size: 61px;
+  border-radius: 32px;
+  transition: all, 0.3s;
+}
