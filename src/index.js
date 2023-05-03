@@ -1,17 +1,51 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { CompEjemplo, ComponenteCard } from "./comp";
+import { Boton } from "./Boton";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+//import { Boton } from "./Boton";
+
+const rootElement = document.getElementById("root"); //elemento root seleccionado
+const root = ReactDOM.createRoot(rootElement);
+
+const change = (info) => {
+  // Muestra por pantalla cuando se ejecute un evento de cambio en el button, muestra el valor de ese button en tiempo real por consola
+  console.clear();
+  console.log(info.target.value);
+};
+
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+  <>
+    <CompEjemplo title="Hola 1" />
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+    <ComponenteCard
+      nombre="lautaro"
+      nick="zoso"
+      edad={30}
+      casado={true}
+      direccion={{
+        calle: "street example",
+        altura: 123,
+        edificio: false, // false -> casa | true -> Departamento
+      }}
+    />
+
+    <ComponenteCard
+      nombre="name"
+      nick="asdfqwer"
+      edad={44}
+      casado={false}
+      direccion={{
+        calle: "calle de ejemplo",
+        altura: 189,
+        edificio: true, // false -> casa | true -> Departamento
+      }}
+    />
+
+
+    <Boton />
+
+    <input onChange={change}></input>
+
+  </> // cierre de fake tag
+);
