@@ -1,4 +1,4 @@
-import './styles.css'
+import "./styles-lista.css";
 
 export const Imprimir = () => {
   return (
@@ -33,24 +33,18 @@ export const Imprimir = () => {
                 aria-label="Close"
               ></button>
             </div>
-            <div class="modal-body">
-                ¿Está seguro que desea imprimir?
-            </div>
+            <div class="modal-body">¿Está seguro que desea imprimir?</div>
             <div class="modal-footer">
-                
-                    
-                <button
-                    className='cancelar__modal boton-foot'
-                    type="button"
-                    data-bs-dismiss="modal"
-                >
-                    Cancelar
-                </button>
-                <button className='imprimir__modal boton-foot' type="button">
-                    Imprimir
-                </button>
-
-
+              <button
+                className="cancelar__modal boton-foot"
+                type="button"
+                data-bs-dismiss="modal"
+              >
+                Cancelar
+              </button>
+              <button className="imprimir__modal boton-foot" type="button">
+                Imprimir
+              </button>
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import "./styles.css";
+import "./styles-lista.css";
 import React, { useState } from "react";
 
 export const BotonCheckBox = () => {

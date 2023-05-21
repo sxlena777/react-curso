@@ -7,17 +7,18 @@ import {
   Empleado,
   Recuadro,
   Search,
-  ListaClientes,
-  ListaProveedores,
-  ListaStock,
   Modale,
   Login,
   Login1,
   //Navbar,
-  Navbar1,
+  Navbar1,  
+  ListaClientes,      // No pertenece a nuestro componente
   //Navbar2
 } from "./components";
-import ListaVentas from "./components/lista/ListaVentas";
+
+import ListaVentas from "./components/lista/ventas/ListaVentas";
+import ListaDeudores from "./components/lista/DEUDORES/ListaDeudores";
+import ListaCompras from "./components/lista/COMPRAS/ListaCompras";
 
 const App = () => {
   return (
@@ -25,7 +26,7 @@ const App = () => {
       <div className="gradient__bg padre">
         <Navbar1 />
         <div className="hijo">
-          <ListaStock />
+          <ListaCompras />
         </div>
       </div>
     </div>
