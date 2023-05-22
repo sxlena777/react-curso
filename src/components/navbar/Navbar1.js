@@ -46,7 +46,7 @@ const Navbar1 = () => {
               ></button>
 
               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                Hola, Usuario.
+                Hola, <span className="h5-span__usuario">Usuario</span>.
               </h5>
 
             </div>
@@ -60,13 +60,13 @@ const Navbar1 = () => {
 
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="3">
-                    <h2>Inicio</h2>
+                    <h2 className="li-a-h2__animation" >Inicio</h2>
                   </a>
                 </li>
 
                 <li class="nav-item">
                   <a class="nav-link" href="4">
-                    <h4>Productos</h4>
+                    <h4 className="li-a-h4__animation">Nuevo Producto</h4>
                   </a>
                 </li>
 
@@ -79,7 +79,7 @@ const Navbar1 = () => {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    <h5>Listados</h5>
+                    <h4 className="li-a-h4__animation">Listados</h4>
                   </a>
                   <ul
                     className="listaDrop"
@@ -117,16 +117,30 @@ const Navbar1 = () => {
                   
                     <li>
                       <a class="dropdown-item subItem" href="1">
-                        Usuarios y Proveedores
+                        Usuarios
                       </a>
                     </li>
-
+                    <li>
+                      <a class="dropdown-item subItem" href="1">
+                        Clientes
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item subItem" href="1">
+                        Proveedores
+                      </a>
+                    </li>
                   
                   </ul>
                 
                 
                 </li>
               
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="3">
+                    <h5 className="li-a-h5__animation" >Cerrar sesion</h5>
+                  </a>
+                </li>
               
               </ul>
               

@@ -49,11 +49,11 @@ const ListaCompras = () => {
                 style={{ width: "74rem", placeItems: "center" }}
               >
                 <caption class="mb-3">
-                  <h2>Ventas</h2>
+                  <h2>Compras</h2>
                 </caption>
                 <thead class="table-light sticky-top ">
                   <tr>
-                    <th scope="col">
+                    <th scope="col" style={{ width: "8rem" }} class="ml-2">
                       <h5>
                         <b>#</b>
                       </h5>
@@ -90,7 +90,7 @@ const ListaCompras = () => {
                       Total 
                     </th>
 
-                    <th>Mas</th>
+                    <th scope="col" style={{ width: "12rem" }} class="ml-2">Mas</th>
                   </tr>
                 </thead>
                 <LineaCompras />
