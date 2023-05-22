@@ -12,13 +12,15 @@ import {
   Login1,
   //Navbar,
   Navbar1,  
-  ListaClientes,      // No pertenece a nuestro componente
+  ListaClientes,
+  ListaProveedores,      // No pertenece a nuestro componente
   //Navbar2
 } from "./components";
 
 import ListaVentas from "./components/lista/ventas/ListaVentas";
 import ListaDeudores from "./components/lista/DEUDORES/ListaDeudores";
 import ListaCompras from "./components/lista/COMPRAS/ListaCompras";
+import Usuarios from "./components/usuarios/Usuarios";
 
 const App = () => {
   return (
