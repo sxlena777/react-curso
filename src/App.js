@@ -21,6 +21,7 @@ import ListaVentas from "./components/lista/ventas/ListaVentas";
 import ListaDeudores from "./components/lista/DEUDORES/ListaDeudores";
 import ListaCompras from "./components/lista/COMPRAS/ListaCompras";
 import Usuarios from "./components/usuarios/Usuarios";
+import ListaUsuarios from "./components/lista/usuarios/ListaUsuarios";
 
 const App = () => {
   return (
@@ -28,7 +29,7 @@ const App = () => {
       <div className="gradient__bg padre">
         <Navbar1 />
         <div className="hijo">
-          <ListaCompras />
+          <ListaUsuarios />
         </div>
       </div>
     </div>
