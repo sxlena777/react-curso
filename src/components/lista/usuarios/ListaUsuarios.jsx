@@ -1,6 +1,7 @@
 import React from "react";
 import { Imprimir } from "../modalBoton";
 import LineaUsuarios from "./LineaUsuarios";
+import '../styles-lista.css'
 
 // falta centrar el T-Head
 
@@ -91,8 +92,13 @@ const ListaUsuarios = () => {
                 <LineaUsuarios />
               </table>
             </div>
+            <div className="conteiner-registro">
+              <button className="imprimir boton-foot">
+                Registrar Usuario
+              </button>
+              <Imprimir />
+            </div>
 
-            <Imprimir />
           </div>
         </div>
       </div>

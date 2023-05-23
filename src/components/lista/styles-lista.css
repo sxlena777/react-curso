@@ -211,3 +211,9 @@
 
   transition: all, 0.2s;
 }
+
+
+
+.conteiner-registro{
+  display: flex;
+}

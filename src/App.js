@@ -29,7 +29,7 @@ const App = () => {
       <div className="gradient__bg padre">
         <Navbar1 />
         <div className="hijo">
-          <ListaUsuarios />
+          <Usuarios />
         </div>
       </div>
     </div>
